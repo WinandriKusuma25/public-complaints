@@ -9,9 +9,7 @@
                   </div>
                   <div class="col-sm-6">
                       <ol class="breadcrumb float-sm-right">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a href="#">Pengguna</a></li>
-                          <li class="breadcrumb-item active">Tambah</li>
+                          <a href="<?php echo base_url("admin/user/tambah"); ?>">Tambah</a>
                       </ol>
                   </div>
               </div>

@@ -97,6 +97,17 @@ to get the desired effect
                             </a>
                         </li>
 
+                        <li class="nav-item ">
+                            <a href="<?php echo base_url().'admin/kategori' ?>"
+                                class="nav-link  <?= activate_menu('kategori') ?>" id="navUser">
+                                <i class="nav-icon fas fa-list"></i>
+                                <p>
+                                    Kategori
+                                </p>
+                            </a>
+                        </li>
+
+
 
 
                         <li class="nav-item">
@@ -134,7 +145,7 @@ to get the desired effect
             <div class="modal-body">Pilih "<b>Keluar</b>" apabila Anda ingin keluar</div>
             <div class="modal-footer">
                 <button class="btn btn-primary" type="button" data-dismiss="modal">Batal</button>
-                <a class="btn btn-danger" href="<?= base_url('auth/logout'); ?>">Logout</a>
+                <a class="btn btn-danger" href="<?= base_url('auth/logout'); ?>">Keluar</a>
             </div>
         </div>
     </div>
