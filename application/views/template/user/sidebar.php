@@ -15,9 +15,9 @@ to get the desired effect
 -->
 <?php
 if (
-$this->session->userdata('level') != 'admin'
+$this->session->userdata('level') != 'pengunjung'
 ) {
-redirect('/user/home');
+redirect('/admin/home');
 }
 ?>
 
@@ -31,7 +31,7 @@ redirect('/user/home');
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
                 <!-- <li class="nav-item d-none d-sm-inline-block">
-                    <a href="<?php echo base_url().'admin/home' ?>" class="nav-link">Home</a>
+                    <a href="<?php echo base_url().'user/home' ?>" class="nav-link">Home</a>
                 </li>
 
                 <li class="nav-item d-none d-sm-inline-block">
@@ -81,7 +81,7 @@ redirect('/user/home');
                with font-awesome or any other icon font library -->
 
                         <li class="nav-item ">
-                            <a href="<?php echo base_url().'admin/home' ?>"
+                            <a href="<?php echo base_url().'user/home' ?>"
                                 class="nav-link  <?= activate_menu('home') ?>" id="navHome">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -90,29 +90,21 @@ redirect('/user/home');
                             </a>
                         </li>
 
-
-
-
-
                         <li class="nav-item ">
-                            <a href="<?php echo base_url().'admin/user' ?>"
-                                class="nav-link  <?= activate_menu('user') ?>" id="navUser">
-                                <i class="nav-icon fas fa-users"></i>
+                            <a href="<?php echo base_url().'user/pengaduan' ?>"
+                                class="nav-link  <?= activate_menu('pengaduan') ?>" id="navHome">
+                                <i class="nav-icon fas fa-bullhorn"></i>
                                 <p>
-                                    Pengguna
+                                    Daftar Pengaduan
                                 </p>
                             </a>
                         </li>
 
-                        <li class="nav-item ">
-                            <a href="<?php echo base_url().'admin/kategori' ?>"
-                                class="nav-link  <?= activate_menu('kategori') ?>" id="navUser">
-                                <i class="nav-icon fas fa-list"></i>
-                                <p>
-                                    Kategori
-                                </p>
-                            </a>
-                        </li>
+
+
+
+
+
 
 
 

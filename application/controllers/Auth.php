@@ -58,13 +58,9 @@ class Auth extends CI_Controller
                     ];
                     $this->session->set_userdata($data);
                     if ($user['level'] == 'admin') {
-                        // helper_log("login", "telah melakukan login");
                         redirect('admin/home');
                     }else if ($user['level'] == 'pengunjung') {
-                        // helper_log("login", "telah melakukan login");
-                        redirect('superadmin/home');
-                    }else{
-                        redirect('member/home');
+                        redirect('user/home');
                     }
                 } else {
                     $this->session->set_flashdata(

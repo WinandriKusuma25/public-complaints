@@ -9,6 +9,12 @@ class User_model extends CI_Model
     {
         return $this->db->get('user')->result();
     }
+
+    public function getUser($nik)
+    {
+        $this->db->select('user.*');
+        return $this->db->get_where('user', ['nik' => $nik])->result();
+    }
     
     public function tambah()
     {
