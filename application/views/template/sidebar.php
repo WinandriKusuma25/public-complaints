@@ -114,6 +114,18 @@ redirect('/user/home');
                             </a>
                         </li>
 
+                        <li class="nav-item ">
+                            <a href="<?php echo base_url().'admin/pengaduan' ?>"
+                                class="nav-link  <?= activate_menu('pengaduan') ?>" id="navHome">
+                                <i class="nav-icon fas fa-bullhorn"></i>
+                                <p>
+                                    Daftar Pengaduan
+                                </p>
+                            </a>
+                        </li>
+
+
+
 
 
 

@@ -27,7 +27,7 @@
                       <div class="col-12">
                           <div class="card  card-primary card-outline">
                               <div class="card-header">
-                                  <h3 class="card-title"> <i class="nav-icon fas fa-kategoris"></i>&nbsp;&nbsp;Berikut
+                                  <h3 class="card-title"> <i class="nav-icon  fas fa-list"></i>&nbsp;&nbsp;Berikut
                                       merupakan
                                       data
                                       kategori</h3>

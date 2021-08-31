@@ -7,10 +7,18 @@ class Pengaduan_model extends CI_Model
     
     public function tampiluser($nik)
     {
-        $this->db->select('pengaduan.*, user.nama, kategori.nama_kategori');
+        $this->db->select('pengaduan.*, user.nama, user.nik, kategori.nama_kategori');
         $this->db->join('user', 'pengaduan.id_user = user.id_user');
         $this->db->join('kategori', 'pengaduan.id_kategori = kategori.id_kategori');
         return $this->db->get_where('pengaduan', ['nik' => $nik])->result();
+    }
+
+    public function tampil()
+    {
+        $this->db->select('pengaduan.*, user.nama,  user.nik,  kategori.nama_kategori');
+        $this->db->join('user', 'pengaduan.id_user = user.id_user');
+        $this->db->join('kategori', 'pengaduan.id_kategori = kategori.id_kategori');
+        return $this->db->get('pengaduan')->result();
     }
 
      public function tambah($upload)

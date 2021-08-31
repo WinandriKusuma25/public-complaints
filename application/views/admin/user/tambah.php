@@ -85,10 +85,10 @@
                                           <div class="form-group">
                                               <label for="">Status</label>
                                               <div class="form-check">
-                                                  <input type="radio" name="status" value="aktif"> Aktif
+                                                  <input type="radio" name="status" value="1"> Aktif
                                               </div>
                                               <div class="form-check">
-                                                  <input type="radio" name="status" value="pasif"> Pasif
+                                                  <input type="radio" name="status" value="0"> Pasif
                                               </div>
                                               <?= form_error('status', '<small class="text-danger pl-3">', '</small>'); ?>
                                           </div>
