@@ -118,10 +118,18 @@
                                     </tfoot>
                                     </tbody>
                                 </table>
+                                <a href="<?php echo base_url('admin/pengaduan/laporan_pdf') ?>"
+                                    class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                                        class="fa fa-file-pdf"></i>
+                                    Unduh PDF</a>
                             </div>
                             <!-- /.card-body -->
+
+
                         </div>
                         <!-- /.card -->
+
+
                     </div>
                     <!-- /.col -->
                 </div>

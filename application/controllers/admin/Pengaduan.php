@@ -12,6 +12,7 @@
             $this->load->model('Pengaduan_model');
             $this->load->model('Kategori_model');
             $this->load->model('User_model');
+            $this->load->library('pdf');
             $this->load->library('form_validation');
             is_logged_in();
          
@@ -64,6 +65,16 @@
                     </div>'
                 );
                 redirect('admin/pengaduan');
+        }
+
+        public function laporan_pdf()
+        {
+        
+            $data['pengaduan'] = $this->Pengaduan_model->tampil();
+            $this->pdf->setPaper('A4', 'potrait');
+            $this->pdf->filename = "Laporan Pengaduan.pdf"; 
+            $this->pdf->set_option('isRemoteEnabled', true);
+            $this->pdf->load_view('admin/pengaduan/laporan_pengaduan', $data);	
         }
     }
 ?>
